@@ -8,6 +8,7 @@
   "name": "tailwind-project",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://github.com/aashi289/Microsoft-Clone.git",
   "dependencies": {
     "ansi-regex": "^6.0.1",
     "ansi-styles": "^6.2.1",
@@ -106,7 +107,9 @@
     "yaml": "^2.3.4"
   },
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "predeploy":"yarn run build",
+    "deploy":"gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
